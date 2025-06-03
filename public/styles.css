@@ -1,0 +1,159 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Estilos do cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ffffff; /* Primária */
+}
+
+.logo {
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilos do título */
+h1 {
+    color: #02455C; /* Primária */
+    text-align: left;
+    margin: 0;
+}
+
+/* Estilos do subtítulo */
+.subtitle {
+    font-size: 11px;
+    text-align: left;
+    margin: 5px 0 24px;
+}
+
+/* Estilos do campo de pesquisa */
+#searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#searchInput::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #aaa; /* Cor do placeholder */
+    font-size: 12px;
+}
+
+/* Estilos do botão */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #02455C; /* Primária */
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #FFDD00; /* Secundária */
+    color: #02455C; /* Primária */
+}
+
+/* Estilos do ícone */
+.icon {
+    height: 20px;
+    margin-right: 5px;
+    background-color: white;
+}
+
+/* Estilos do resultado */
+#results {
+    margin-top: 20px;
+}
+
+#results p {
+    font-size: 13px;
+    color: #02455c;
+    font-weight: 600;
+}
+
+/* Estilos do grupo de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos do container */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    width: 300px; /* Ajuste conforme necessário */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0.8); /* Cor de fundo com transparência */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1; /* Ajuste a opacidade conforme necessário */
+    z-index: -1;
+}
+
+/* Estilos da imagem do robô */
+.img-robot {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
+/* Estilos do botão de pesquisa */
+.search-button {
+    background-color: #02455c; /* Cor de fundo da bola */
+    border: none;
+    border-radius: 50%; /* Forma redonda */
+    width: 40px; /* Largura da bola */
+    height: 40px; /* Altura da bola */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px; /* Tamanho do ícone */
+    color: #02455C; /* Cor do ícone */
+    position: absolute;
+    right: 10px; /* Alinhamento ao lado direito */
+}
+
+.search-button i {
+    color: #FFFFFF; /* Branco */
+}
